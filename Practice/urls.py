@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
 
 from views import showHello
+from admin.views import addName
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
@@ -9,6 +10,7 @@ urlpatterns = patterns('',
     
 
     url(r'^$', showHello),
+    url(r'^admin/$', addName),
 
     # Examples:
     # url(r'^$', 'Practice.views.home', name='home'),
